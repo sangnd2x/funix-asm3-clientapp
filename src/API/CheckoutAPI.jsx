@@ -1,9 +1,5 @@
 import axiosClient from './axiosClient';
 
-const headers = {
-  'authorization': 'Bearer ' + localStorage.getItem('token')
-}
-
 const CheckoutAPI = {
 	postEmail: (data) => {
 		const url = `/email`;

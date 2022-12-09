@@ -1,9 +1,5 @@
 import axiosClient from './axiosClient';
 
-const headers = {
-  'authorization': 'Bearer ' + localStorage.getItem('token')
-}
-
 const CartAPI = {
 	getCarts: (query) => {
 		const url = `/carts${query}`;
